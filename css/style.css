@@ -1,0 +1,158 @@
+/* The Basics============================== */
+
+  * {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Home Page ======================== */
+
+header {
+  height: 100vh;
+  background-image: url('../images/image_placeholder_1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  background-size: cover
+}
+
+.image {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  background-size: cover;
+}
+
+.second-image {
+  background-image: url('../images/image_placeholder_2.jpg');
+}
+
+.third-image {
+  background-image: url('../images/image_placeholder_1.jpg');
+}
+
+.fourth-image {
+  background-image: url('../images/image_placeholder_2.jpg');
+}
+
+.fifth-image {
+  background-image: url('../images/image_placeholder_1.jpg');
+}
+
+nav {
+  width: 60px;
+  height: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  border-style: solid;
+  border-color: #D8D8D8;
+  border-width: 1px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.scrolled {
+  position: fixed;
+}
+
+h2 {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-family: courier;
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 308px;
+
+}
+
+
+
+/* View Options ======================== */
+
+
+div a, p {
+  font-family: courier;
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding-top: 28px;
+  padding-left: 10px;
+}
+
+.one, .four {
+  display: inline-block;
+  color: white;
+}
+
+.one {
+  margin-left: 86%;
+}
+
+.fa-th-large {
+  font-size: 8px;
+}
+
+.fa-bars {
+  font-size: 8.8px;
+}
+
+.view-option {
+  color:black;
+}
+
+.second-image-view {
+  float: left;
+  width: 50%;
+}
+
+.third-image-view {
+  float: left;
+  width: 50%;
+}
+
+.fourth-image-view {
+  background-image: url('../images/image_placeholder_1.jpg');
+  float: left;
+  width: 65%;
+}
+
+.fifth-image-view {
+  background-image: url('../images/image_placeholder_2.jpg');
+  float: left;
+  width: 35%;
+}
+
+/* More Information ======================== */
+
+.vertical ul {
+  color: black;
+  margin-left: 300px;
+  line-height: 30px;
+  list-style: none;
+   font-family: courier;
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 30%;
+}
+
+/* Mobile Page ======================== */
+
