@@ -5,10 +5,10 @@
 // // Else remove the scrolled class from .sidebar
 
 var stickyNavOffset = $('.sidebar').offset().top
-console.log('Sticky nav offset is: ' + stickyNavOffset)
+// console.log('Sticky nav offset is: ' + stickyNavOffset)
 
 $(window).on('scroll', function() {
-console.log('Distance scrolled: ' + $(window).scrollTop())
+// console.log('Distance scrolled: ' + $(window).scrollTop())
 	if ($(window).scrollTop() > stickyNavOffset) {
     $('.sidebar').addClass('scrolled');
     } else {
@@ -33,6 +33,7 @@ $('.one').on('click', function () {
 
 $('.four').on('click', function () {
 	$('.one').removeClass('view-option');
+	$('.one').removeClass('black');
 	$('.one').find('p').removeClass('view-option');
 	$('.four').addClass('view-option');
 	$('.four').find('p').addClass('view-option');
@@ -42,6 +43,8 @@ $('.four').on('click', function () {
 // If click .four add class #third-image-view to #third-image
 
 $('.four').on('click', function () {
+	$('#fullpage').empty();
+	$('#fullpage').html("<div class='section active'><img src='images/image_placeholder_1.jpg'></div><div class='section'><img src='images/image_placeholder_2.jpg' class='second-image '><img src='images/image_placeholder_1.jpg' class='third-image'><img src='images/image_placeholder_2.jpg' class='fourth-image'><img src='images/image_placeholder_1.jpg' class='fifth-image'></div>");
 	$('.second-image').addClass('second-image-view');
 	$('.third-image').addClass('third-image-view');
 	$('.fourth-image').addClass('fourth-image-view');
@@ -53,18 +56,26 @@ $('.one').on('click', function () {
 	$('.third-image').removeClass('third-image-view');
 	$('.fourth-image').removeClass('fourth-image-view');
 	$('.fifth-image').removeClass('fifth-image-view');
+	$('#fullpage').empty();
+	$('#fullpage').html("<div id='fullpage'><div class='section active'><img src='images/image_placeholder_1.jpg'></div><div class='section'><img src='images/image_placeholder_2.jpg' class='second-image'></div><div class='section'><img src='images/image_placeholder_1.jpg' class='third-image'></div><div class='section'><img src='images/image_placeholder_2.jpg' class='fourth-image'></div><div class='section'><img src='images/image_placeholder_1.jpg' class='fifth-image'></div></div>");
 });
 
-/* Sticky View Option ======================== */
+/* Scroll ======================== */
 
-// var stickyView = $('.view').offset().top
-// console.log('Sticky nav offset is: ' + stickyView)
+// var ypos,image;
+// function parallex () {
+// 	ypos = window.pageYOffset;
+// 	image = document.getElementById('image');
+// 	image.style.top = ypos * .4 + 'px';
+// }
+// window.addEventListener('scroll',parallex)
 
-// $(window).on('scroll', function() {
-// console.log('Distance scrolled: ' + $(window).scrollTop())
-// 	if ($(window).scrollTop() > stickyView) {
-//     $('.view').addClass('scrolled');
-//     } else {
-//     $('.view').removeClass('scrolled');
-//     }
-// });
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+    	scrollingSpeed: 600,
+    	autoScrolling: true,
+    	keyboardScrolling: true,
+    });
+});
+
+

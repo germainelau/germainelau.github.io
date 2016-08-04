@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -24,37 +25,38 @@
             <![endif]-->
 
             <!-- Add your site or application content here -->
-            <header>
-            </header>
-
-            <nav class="sidebar">
-             <h2>Germaine Lau</h2>
+<!--             <header>
+             <img src="images/image_placeholder_1.jpg" id="image">
+           </header> -->
+           <div id="fullpage">
+             <div class="section active"><img src="images/image_placeholder_1.jpg" class="image"></div>
+             <div class="section"><img src="images/image_placeholder_2.jpg" class="second-image "></div>
+             <div class="section"><img src="images/image_placeholder_1.jpg" class="third-image"></div>
+             <div class="section"><img src="images/image_placeholder_2.jpg" class="fourth-image"></div>
+             <div class="section"><img src="images/image_placeholder_1.jpg" class="fifth-image"></div>
+           </div>
+           <nav class="sidebar">
+             <a href="index.html">Germaine Lau</a>
            </nav>
-           
-           <div class="image second-image">
-             <div class="view">
-               <div class="one">
-                 <p>01</p>
-                 <i class="fa fa-bars" aria-hidden="true"></i>
-               </div>
-               <p> / </p>
-               <div class="four">
-                 <p>04</p>
-                 <i class="fa fa-th-large" aria-hidden="true"></i>
-               </div>
+           <div class="view">
+             <div class="one black">
+               <p>01</p>
+               <i class="fa fa-bars" aria-hidden="true"></i>
+             </div>
+             <p> / </p>
+             <div class="four">
+               <p>04</p>
+               <i class="fa fa-th-large" aria-hidden="true"></i>
              </div>
            </div>
-           <div class="image third-image">
-           </div>
-           <div class="image fourth-image">
-           </div>
-           <div class="image fifth-image">
-           </div>
+           
 
 
            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
            <script src="js/plugins.js"></script>
+                      <script type="text/javascript" src="js/vendor/jquery.fullPage.min.js"></script>
            <script src="js/main.js"></script>
 
            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
