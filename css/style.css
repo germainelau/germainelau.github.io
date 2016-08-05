@@ -157,7 +157,7 @@ h3 {
 /* Hover ======================== */
 /* Note: Up and down are opposite */
 
-#up{
+/*#up{
   width:348px;
   height:200px;  
   margin-top: 533px;
@@ -188,41 +188,59 @@ h3 {
 #gallery_container div{
   width: 100%;   
     float:left;
-}
+}*/
 
-#up_2{
+/*#up {
   width:348px;
   height:100px;  
   margin-top: 533px;
   position: fixed;
   margin-left: 77%;
   z-index: 100;
+  background: green;
 }
 
-#down_2{
+#down {
    width:348px;
     height:100px;
    margin-left: 77%;
    position: fixed; 
   z-index: 100;
 }
+*/
 
-#gallery_container_two {
+/*.gallery {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+}*/
+
+.gallery_one {
+  float: left;
+  width: 33.3%;
+  margin-left: 43%;
+}
+
+.gallery_two {
+  float: left;
+  width: 23.5%;
+  margin-left: 76.5%;
+  margin-top: -144.5%;
+  top: 0;
+}
+
+/*#gallery_container {
   height:650px;
-  margin-left: 77%;
+  margin-left: 56.7%;
   overflow-y:auto;   
   overflow: hidden;
   position: relative;
-  margin-top: -650px;
-  float: left;
-  width: 23.2%;
-}
+/*  margin-top: -147.4%;*/
+/*  float: left;
+  width: 23.3%;*/
+/*}*/
  
-#gallery_container_two div {
+/*#gallery_container div {
     width: 100%;   
     float:left;
-}
-
-.gallery_two img {
-  padding-bottom: 2px;
-}
+}*/

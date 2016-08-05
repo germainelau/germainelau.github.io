@@ -33,55 +33,28 @@ $(document).ready(function(){
 
 });
 
-/* Scroll ======================== */
 
-var amount = '';
+// var amount = '';
 
-function scroll() {
-    $('#gallery_container').animate({
-        scrollTop: amount
-    }, 100, 'linear',function() {
-        if (amount != '') {
-            scroll();
-        }
-    });
-}
-$('#up').hover(function() {
-    amount = '+=32';
-    scroll();
-}, function() {
-    amount = '';
-});
-$('#down').hover(function() {
-    amount = '-=32';
-    scroll();
-}, function() {
-    amount = '';
-});
-
-/* Scroll ======================== */
-
-var amount = '';
-
-function scroll() {
-    $('#gallery_container_two').animate({
-        scrollTop: amount
-    }, 100, 'linear',function() {
-        if (amount != '') {
-            scroll();
-        }
-    });
-}
-$('#up_2').hover(function() {
-    amount = '+=30';
-    scroll();
-}, function() {
-    amount = '';
-});
-$('#down_2').hover(function() {
-    amount = '-=30';
-    scroll();
-}, function() {
-    amount = '';
-});
+// function scroll() {
+//     $('#gallery_container').animate({
+//         scrollTop: amount
+//     }, 100, 'linear',function() {
+//         if (amount != '') {
+//             scroll();
+//         }
+//     });
+// }
+// $('#up').hover(function() {
+//     amount = '+=30';
+//     scroll();
+// }, function() {
+//     amount = '';
+// });
+// $('#down').hover(function() {
+//     amount = '-=30';
+//     scroll();
+// }, function() {
+//     amount = '';
+// });
 
