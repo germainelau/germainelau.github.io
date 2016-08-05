@@ -10,7 +10,23 @@
   clear: both;
 }
 
+html {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
 /* Home Page ======================== */
+
 body {
   font-family: courier;
   font-weight: normal;
@@ -18,11 +34,10 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
   color: black;
+  margin: 0px;
 }
 
 img {
-/*  width: 95.22%;
-  margin-left: 60px;*/
   width: 100%;
 }
 
@@ -43,96 +58,60 @@ nav {
   z-index: 90;
 }
 
-.scrolled {
-  position: fixed;
-}
-
 nav a {
   transform: rotate(-90deg);
   white-space: nowrap;
   letter-spacing: 2.7px;
-  font-size: 9px;
   text-transform: uppercase;
   display: block;
-  text-align: center;
   margin-top: 308px;
-  font-weight: normal;
   color: black;
   text-decoration: none;
 }
 
-
-
 /* View Options ======================== */
 
-section {
-  position: relative;
-}
-
-.view {
-  text-transform: uppercase;
-  display: inline-block;
-  color: white;
-  padding-top: 28px;
-  padding-left: 85%;
-  z-index: 100;
+#views {
   position: fixed;
-  top: 12px;
+  top: 40px;
+  right: 50px;
+  font-size: 9px;
+  color: white;
 }
 
-.view p {
-  display: inline-block;
+#views span {
+  cursor: pointer;
 }
 
-.one, .four {
-  display: inline-block;
+#header {
+  width: 100%;
+}
 
+#normalContainer img {
+  width: 100%;
+}
+
+.page {
+  width: 100%;
+}
+
+.gridTile {
+  width: 50%;
+  float: left;
 }
 
 .black {
   color: black;
 }
 
-.fa-th-large {
-  font-size: 8px;
-}
-
-.fa-bars {
-  font-size: 8.8px;
-}
-
-.view-option {
-  color:black;
-}
-
-.second-image-view {
-  float: left;
-  width: 50%;
-}
-
-.third-image-view {
-  float: left;
-  width: 50%;
-}
-
-.fourth-image-view {
-  float: left;
-  width: 50%;
-}
-
-.fifth-image-view {
-  float: left;
-  width: 50%;
-}
-
 /* More Information ======================== */
 
 .vertical ul {
   color: black;
-  margin-left: 40px;
+  margin-left: .8%;
   line-height: 20px;
   list-style: none;
-  margin-top: 21.5%;
+  margin-top: 27.6%;
   float: left;
   width: 10%;
   text-align: right;
@@ -143,26 +122,107 @@ article p {
   text-transform: none;
   color: black;
   float: left;
-  width: 23%;
+  width: 25%;
   font-size: 8.5px;
   text-align: justify;
-  margin-top: 19%;
-  margin-left: 170px;
+  margin-top: 27%;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-left: 12%;
   line-height: 20px;
   letter-spacing: .3px;
   position: fixed;
+  border-top: 1px dotted #454;
+  border-bottom: 1px dotted #454;
 }
 
-.gallery {
+h3 {
+  position: fixed;
+  margin-top: 28%;
+  margin-left: 12%;
+  font-size: 6.5px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.gallery img {
+  padding-bottom: 2px;
+}
+
+.gallery img:hover {opacity: 0.7;}
+
+
+/* Hover ======================== */
+/* Note: Up and down are opposite */
+
+#up{
+  width:348px;
+  height:200px;  
+  margin-top: 533px;
+  position: fixed;
+  margin-left: 45%;
+  background-color: green;
+}
+
+#down{
+   width:348px;
+    height:200px;
+   margin-left: 45%;
+   position: fixed; 
+  z-index: 100;
+  background-color: green;
+}
+
+#gallery_container{
+  height:650px;
+  margin-left: 44.7%;
+  overflow-y:auto;   
+  overflow: hidden;
+  top: 0;
   float: left;
-  width: 50%;
-  transform: translateX(100%);
+  width: 32.1%;
 }
 
-.photogrid {
+#gallery_container div{
+  width: 100%;   
+    float:left;
+}
+
+#up_2{
+  width:348px;
+  height:100px;  
+  margin-top: 533px;
+  position: fixed;
+  margin-left: 77%;
+  z-index: 100;
+}
+
+#down_2{
+   width:348px;
+    height:100px;
+   margin-left: 77%;
+   position: fixed; 
+  z-index: 100;
+}
+
+#gallery_container_two {
+  height:650px;
+  margin-left: 77%;
+  overflow-y:auto;   
+  overflow: hidden;
+  position: relative;
+  margin-top: -650px;
   float: left;
-  width: 50%;
+  width: 23.2%;
+}
+ 
+#gallery_container_two div {
+    width: 100%;   
+    float:left;
 }
 
-/* Mobile Page ======================== */
-
+.gallery_two img {
+  padding-bottom: 2px;
+}
