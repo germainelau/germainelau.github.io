@@ -119,14 +119,14 @@ ul {
   display: inline-block;
 }
 
-.vertical ul {
+#vertical ul {
   bottom: 0;
-  margin-bottom: 90px;
+  margin-bottom: 93px;
 }
 
-.firstVertical ul {
+#firstVertical ul {
   bottom: 0;
-  margin-bottom: 163px;
+  margin-bottom: 166px;
 }
 
 article p {
@@ -135,7 +135,7 @@ article p {
   float: left;
   width: 300px;
   bottom: 0;
-  margin-bottom: 83px;
+  margin-bottom: 86px;
   padding-top: 27px;
   padding-bottom: 7px;
   margin-left: 140px;
@@ -147,7 +147,7 @@ article p {
 h3 {
   position: fixed;
   bottom: 0;
-  margin-bottom: 135px;
+  margin-bottom: 138px;
   margin-left: 140px;
   font-size: 6.5px;
   font-weight: 400;
@@ -158,7 +158,7 @@ h3 {
 
 section h3 {
   bottom: 0;
-  margin-bottom: 185px;
+  margin-bottom: 188px;
   border-top: 1px dotted #454;
   padding-top: 7px;
   width: 300px;
@@ -170,26 +170,26 @@ section h3 {
   height: 51px;
   position: fixed;
   bottom: 0;
-  margin-bottom: 160px;
+  margin-bottom: 163px;
   margin-left: 310px;
 }
 
-.date h3 {
+#date h3 {
   margin-left: 320px;
   bottom: 0;
-  margin-bottom: 185px;
+  margin-bottom: 188px;
 }
 
-.date_2 p {
+#date_2 p {
   margin-left: 320px;
   bottom: 0;
-  margin-bottom: 165px;
+  margin-bottom: 168px;
   position: fixed;
 }
 
 section p {
   bottom: 0;
-  margin-bottom: 165px;
+  margin-bottom: 168px;
   margin-left: 140px;
   position: fixed;
 }
@@ -200,16 +200,26 @@ section p {
 
 .gallery img:hover {opacity: 0.7;}
 
-.gallery_one {
+#gallery_one {
   float: left;
   width: 32.5%;
   margin-left: 43.8%;
 }
 
-.gallery_two {
+#gallery_two {
   float: left;
   width: 23.5%;
   margin-left: 76.5%;
-  margin-top: -144.5%;
-  top: 0;
+  margin-top: -162.8%;
 }
+
+.scrollUp {
+  position: fixed;
+  color: #454;
+  margin-left: 40.4%;
+  bottom: 0;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
