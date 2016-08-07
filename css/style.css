@@ -57,29 +57,25 @@ img {
   height: 100%;
   position: fixed;
   border-right: 1px solid #D8D8D8;
-  /*  float: left;*/
   width: 62px;
   right: 0;
-  background-color: black;
-  overflow:hidden;
-  /*  margin-left: 90%;*/
 }
 
 .title a {
-  transform: rotate(-90deg);
   white-space: nowrap;
   letter-spacing: 2.7px;
-  margin-top: 328px;
-  right: 10px;
-  margin-left: 60px;
+  margin-bottom: 50%;
   font-size: 9px;
   display: block;
   text-transform: uppercase;
-
+  position: absolute;
+  top: 50%; 
+  right: -15px;
+  transform: rotate(-90deg);
 }
 
 nav {
-  width: 140px;
+  width: 1200px;
   height: 100%;
   position: fixed;
 }
@@ -192,11 +188,12 @@ article {
   margin-left: 140px;
   position: fixed;
   width: 300px;
-  bottom: 80px;
+/*  bottom: 80px;*/
+  top: 430px;
   line-height: 20px;
-  background-color: white;
     border-top: 1px dotted #454;
   border-bottom: 1px dotted #454;
+  float: left;
 }
 
 h3 {
@@ -205,7 +202,7 @@ h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin-bottom: -9px;
+  margin-bottom: -10px;
 }
 
 article div {
@@ -221,6 +218,10 @@ article div:first-of-type {
   border-top: 1px dotted #454;
 }
 
+.description h3 {
+  margin-bottom: -6px;
+}
+
 article .type {
   border-right: 1px dotted #454;
 }
@@ -230,12 +231,14 @@ article .type {
 }
 
 
+
 /* Gallery ======================== */
 
-    .gallery_one {
+  .gallery_one {
     float: right;
-    width: 32.5%;
+    width: 32%;
     padding-right: 2px;
+    padding-left: 30px;
   }
 
   .gallery_one img {
@@ -247,7 +250,7 @@ article .type {
 
   .gallery_two {
     float: right;
-    width: 23.6%;
+    width: 24%;
 }
 
   .gallery_two img {
@@ -259,9 +262,13 @@ article .type {
 /* Gallery (Visual Design) ======================== */
 
 .vis {
-  float: left;
-  width: 56.2%;
-  margin-left: 558px;
+  float: right;
+  width: 56%;
+  padding-left: 30px;
+}
+
+.vis img {
+  padding-bottom: 2px;
 }
 
 /* Snap Back ======================== */
