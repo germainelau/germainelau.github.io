@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-/*  border: 1px solid black;*/
+  /*  border: 1px solid black;*/
 }
 
 .clearfix:after {
@@ -75,14 +75,14 @@ img {
 }
 
 nav {
-  width: 1200px;
+  width: 1273px;
   height: 100%;
   position: fixed;
 }
 
 .sidebar ul {
   bottom: 77px;
-  margin-left: 140px;
+  margin-left: 110px;
   position: fixed;
 }
 
@@ -115,6 +115,9 @@ nav {
 .sidebar {
   transition: all .5s ease-in-out;
   transform: translateX(-95%);
+  background-image: url('../images/two.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
   background-color: white;
   z-index: 100;
 }
@@ -125,7 +128,7 @@ nav {
 }
 
 .sidebar li:hover {
-  transform: translateX(3%);
+  transform: translateX(3%)
 }
 
 .sidebar li:last-child:hover {
@@ -176,6 +179,7 @@ nav {
 .gridTile {
   width: 50%;
   float: left;
+
 }
 
 .black {
@@ -188,10 +192,10 @@ article {
   margin-left: 140px;
   position: fixed;
   width: 300px;
-/*  bottom: 80px;*/
-  top: 430px;
+  bottom: 80px;
+  /*  top: 430px;*/
   line-height: 20px;
-    border-top: 1px dotted #454;
+  border-top: 1px dotted #454;
   border-bottom: 1px dotted #454;
   float: left;
 }
@@ -230,40 +234,56 @@ article .type {
   padding-left: 10px;
 }
 
+.date h3 {
+  padding-bottom: 9px;
+}
+
+.dateEdit {
+  padding-left: 15px;
+}
+
+.dateEdit h3 {
+  padding-bottom: 9px;
+}
+
+#slashEdit {
+  padding-left: 5px;
+  padding-right: 2px;
+}
 
 
 /* Gallery ======================== */
 
-  .gallery_one {
-    float: right;
-    width: 32%;
-    padding-right: 2px;
-    padding-left: 30px;
-  }
-
-  .gallery_one img {
-    padding-bottom: 2px;
-  }
-
-    .gallery_one img:hover {opacity: 0.7;}
-
-
-  .gallery_two {
-    float: right;
-    width: 24%;
+.gallery_one {
+  float: right;
+  width: 34%;
+  padding-right: 2px;
+  padding-left: 30px;
 }
 
-  .gallery_two img {
-    padding-bottom: 2px;
-  }
+.gallery_one img {
+  padding-bottom: 2px;
+}
 
-  .gallery_two img:hover {opacity: 0.7;}
+.gallery_one img:hover {opacity: 0.7;}
+
+
+.gallery_two {
+  float: right;
+  width: 24%;
+}
+
+.gallery_two img {
+  padding-bottom: 2px;
+}
+
+.gallery_two img:hover {opacity: 0.7;}
 
 /* Gallery (Visual Design) ======================== */
 
 .vis {
   float: right;
-  width: 56%;
+  width: 58%;
   padding-left: 30px;
 }
 
@@ -294,4 +314,72 @@ article .type {
 }
 
 /* Collage ======================== */
+.grey {
+  color: #aeaeae;
+}
 
+.collage {
+  transition: all .5s ease-in-out;
+  float: none;
+  position: relative;
+}
+
+.dollClass {
+   transform:translate(64%,0%);
+   width: 60%;
+}
+
+.kevinClass {
+   transform: translate(-324%, -95%);
+   width: 53%;
+}
+
+.legsClass {
+    width: 45%;
+    transform: translate(-38%, 130%);
+}
+
+.twoLegsClass {
+  width: 80%;
+ transform: translate(65%, 5%);
+}
+
+.blueBuildingClass {
+     width: 53%;
+    transform: translate(40%, 8%);
+}
+
+.rebeccaClass {
+    width: 60%;
+    transform: translate(-60%, -100%);
+}
+
+.portraitClass {
+    width: 70%;
+    transform: translate(10%, -271%);
+}
+
+.rebeccaVerticalClass {
+    width: 85%;
+    transform: translate(90%, 80%);
+}
+
+.pinkClass {
+      width: 51%;
+        transform: translate(244%, -481%);
+}
+
+.treeClass {
+   width: 65%;
+    transform: translate(28%, -274%);
+}
+
+.buildingsClass {
+       width: 51%;
+    transform: translate(240%, -147%);
+}
+
+.legsClass {
+      width: 40%;
+    transform: translate(-30%, 135%);
+}
