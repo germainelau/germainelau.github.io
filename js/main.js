@@ -112,7 +112,7 @@ $(document).ready(function(){
 		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotorebeccaVertical.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
 		$('.gallery_one').removeClass('viewThreeLarge');
 		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt="" class="blueBuilding"><img src="images/PhotoRebeccaEdit.jpg" alt=""><img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
-		$('.gallery_three').empty();	
+		$('.gallery_three').empty()	
 
 });
 
