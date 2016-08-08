@@ -61,9 +61,9 @@ img {
 
 .title a {
   white-space: nowrap;
-  letter-spacing: 2.7px;
+  letter-spacing: 2.9px;
 /*  margin-bottom: 50%;*/
-  font-size: 9.5px;
+  font-size: 10px;
   display: block;
   text-transform: uppercase;
   position: relative;
@@ -80,6 +80,14 @@ width: 1300px;
   z-index: 100;
   cursor: pointer;
   top: 0;
+}
+
+nav .hamburger {
+  bottom: 5%;
+  position: fixed;
+  right: 2.4%;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .sidebar ul {
@@ -116,12 +124,22 @@ width: 1300px;
 .sidebar {
   transition: all .5s ease-in-out;
   transform: translateX(-95.3%);
-  background-image: url('../images/two.jpg');
-  background-repeat: no-repeat;
-  background-position: right top;
   background-color: white;
   z-index: 100;
 }
+
+.one {
+  background-image: url('../images/one.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.three {
+  background-image: url('../images/three.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 
 .active {
   transform: translateX(-2.2%);
@@ -134,6 +152,7 @@ width: 1300px;
 
 .sidebar li:last-child:hover {
  transform: translateX(0%);
+
 }
 
 .sidebar a:active {
@@ -233,11 +252,11 @@ article div:first-of-type {
 }
 
 .date {
-  padding-left: 4%;
+  padding-left: 18px;
   border-left: 1px dotted #454;
    float: left;
    width: 40%;
-   padding-bottom: 3.1%;
+   padding-bottom: 12px;
 }
 
 .type h3 {
@@ -345,4 +364,6 @@ article div:first-of-type {
 /* Collage ======================== */
 .grey {
   color: #aeaeae;
+}
+
 }

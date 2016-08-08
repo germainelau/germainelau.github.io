@@ -139,3 +139,14 @@ $(".doll").on('mouseleave',function(){
 	$('.description').find('p').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
 
 });
+
+/* Hover Numbers ======================== */
+
+$('nav').find('one').on('mouseenter',function(){
+	$('.sidebar').addClass('oneClass');
+
+});
+
+
+
+
