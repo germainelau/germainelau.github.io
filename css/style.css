@@ -31,7 +31,7 @@ html {
 body {
   font-family: courier;
   font-weight: normal;
-  font-size: 9.4px;
+  font-size: 9.6px;
   letter-spacing: .3px;
   text-decoration: none;
   color: black;
@@ -43,7 +43,7 @@ img {
 }
 
 #header {
-  background: url('../images/image_placeholder_1.jpg') no-repeat center center fixed;
+  background: url('../images/homeHeader.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0 auto;
   position: relative;
@@ -65,7 +65,7 @@ img {
   white-space: nowrap;
   letter-spacing: 2.7px;
   margin-bottom: 50%;
-  font-size: 9px;
+  font-size: 9.5px;
   display: block;
   text-transform: uppercase;
   position: absolute;
@@ -78,6 +78,8 @@ nav {
   width: 1273px;
   height: 100%;
   position: fixed;
+  z-index: 100;
+    cursor: pointer;
 }
 
 .sidebar ul {
@@ -199,7 +201,7 @@ article {
 }
 
 h3 {
-  font-size: 7.4px;
+  font-size: 7.5px;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -217,7 +219,6 @@ article div:first-of-type {
 
 .description{
   width: 320px;
-  border-top: 1px dotted #454;
 }
 
 .description h3 {
@@ -226,10 +227,15 @@ article div:first-of-type {
 
 article .type {
   border-right: 1px dotted #454;
+  border-bottom: 1px dotted #454;
 }
 
 .date {
-  padding-left: 10px;
+  padding-left: 15px;
+  border-bottom: 1px dotted #454;
+  padding-bottom: 9px;
+  padding-right: 93px;
+  margin-left: -5px;
 }
 
 .date h3 {
@@ -337,7 +343,7 @@ article .type {
 }
 
 .HomeScrollUp {
-  margin-left: 7.7%;
+  margin-left: 8.5%;
   position: fixed;
   bottom: 0;
   margin-bottom: 25px;
