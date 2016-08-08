@@ -93,47 +93,54 @@ $(document).ready(function(){
 		$("#collage").removeClass("grey")
 		$("#collage").addClass("black")
 		$("#grid").addClass("grey");
-		$(".doll").addClass('dollClass collage');
-		$(".kevin").addClass('kevinClass collage');
-		$(".legs").addClass('legsClass collage');
-		$(".twoLegs").addClass('twoLegsClass collage');
-		$(".blueBuilding").addClass('blueBuildingClass collage');
-		$(".rebecca").addClass('rebeccaClass collage');
-		$(".portrait").addClass('portraitClass collage');
-		$(".rebeccaVertical").addClass('rebeccaVerticalClass collage');
-		$(".tree").addClass('treeClass collage');
-		$(".pink").addClass('pinkClass collage');
-		$(".buildings").addClass('buildingsClass collage');
-	});
+		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt=""><img src="images/PhotorebeccaVertical.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
+		$('.gallery_two').addClass('viewThreeMid');
+		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt=""><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoRebeccaEdit.jpg" alt="">');
+		$('.gallery_one').addClass('viewThreeLarge');
+		$('.gallery_three').removeClass('hide');
+		$('.gallery_three').html('<img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
+		$('.gallery_three').addClass('viewThree gallery_three img gallery_three img:hover');
+});	
+
 
 	$("#grid").click(function(){
 		$("#grid").removeClass("grey");
 		$("#grid").addClass("black");
 		$("#collage").addClass("grey");
-$(".doll").removeClass('dollClass collage');
-		$(".kevin").removeClass('kevinClass collage');
-		$(".legs").removeClass('legsClass collage');
-		$(".twoLegs").removeClass('twoLegsClass collage');
-		$(".blueBuilding").removeClass('blueBuildingClass collage');
-		$(".rebecca").removeClass('rebeccaClass collage');
-		$(".portrait").removeClass('portraitClass collage');
-		$(".rebeccaVertical").removeClass('rebeccaVerticalClass collage');
-		$(".tree").removeClass('treeClass collage');
-		$(".pink").removeClass('pinkClass collage');
-		$(".buildings").removeClass('buildingsClass collage');
+		$('.gallery_two').removeClass('viewThreeMid');
+		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" ><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotorebeccaVertical.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
+		$('.gallery_one').removeClass('viewThreeLarge');
+		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt=""><img src="images/PhotoRebeccaEdit.jpg" alt=""><img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
+		$('.gallery_three').empty()	
 
-	});
+});	
+
+});
+
 
 /* Hover Descriptions ======================== */
 
-$(".doll").on('mouseenter',function(){
-	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>Floating doll head</p></div>');
+$(".blueBuilding").on('mouseenter',function(){
+	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>Financial District, 2016</p></div>');
 	$('article').hide();
-	$('article').fadeIn(700);
+	$('article').fadeIn(200);
+});
+
+$(".blueBuilding").on('mouseleave',function(){
+	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>From legs to skyscrapers&mdash; a collection of photos.</p></div>');
+	$('article').hide();
+	$('article').fadeIn(200);
+});
+
+$(".doll").on('mouseenter',function(){
+	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>Floating doll head, 2015</p></div>');
+	$('article').hide();
+	$('article').fadeIn(200);
 });
 
 $(".doll").on('mouseleave',function(){
-	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>From doll heads to skyscrapers&mdash; a collection of photos taken since 2015.</p></div>');
+	$('article').html('<div class="type"> <h3> Type: </h3><p>Photography</p></div><div class="dateEdit"><h3>View:</h3><span id="grid"> <i class="fa fa-th-large" aria-hidden="true"></i></span><span id="slashEdit">/</span><span id="collage"> <i class="fa fa-th" aria-hidden="true"></i></span> </div><div class="description text"><h3>Description:</h3><p>From legs to skyscrapers&mdash; a collection of photos.</p></div>');
 	$('article').hide();
-	$('article').fadeIn(700);
+	$('article').fadeIn(200);
 });
+
