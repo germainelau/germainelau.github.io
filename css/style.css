@@ -43,7 +43,7 @@ img {
 }
 
 #header {
-  background: url('../images/homeHeader.jpg') no-repeat center center fixed;
+  background: url('../images/FinalHomeHeader.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0 auto;
   height: 100vh;
@@ -136,6 +136,12 @@ nav .hamburger {
 
 .three {
   background-image: url('../images/three.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.four {
+    background-image: url('../images/four.jpg');
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -263,7 +269,13 @@ article div:first-of-type {
   margin-bottom: -8%;
 }
 
+.dateEdit h3 {
+/*  margin-bottom: -8%;*/
+}
 
+.dateEdit h3 {
+  padding-bottom: -12px;
+}
 
 /* Gallery ======================== */
 
