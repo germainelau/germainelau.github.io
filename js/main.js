@@ -94,7 +94,7 @@ $(document).ready(function(){
 		$("#collage").removeClass("grey")
 		$("#collage").addClass("black")
 		$("#grid").addClass("grey");
-		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotorebeccaVertical.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
+		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoRebeccaVertical2.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
 		$('.gallery_two').addClass('viewThreeMid');
 		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt="" class="blueBuilding"><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoRebeccaEdit.jpg" alt="">');
 		$('.gallery_one').addClass('viewThreeLarge');
@@ -109,7 +109,7 @@ $(document).ready(function(){
 		$("#grid").addClass("black");
 		$("#collage").addClass("grey");
 		$('.gallery_two').removeClass('viewThreeMid');
-		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotorebeccaVertical.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
+		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotoRebeccaVertical2.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
 		$('.gallery_one').removeClass('viewThreeLarge');
 		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt="" class="blueBuilding"><img src="images/PhotoRebeccaEdit.jpg" alt=""><img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
 		$('.gallery_three').empty()	
