@@ -134,6 +134,12 @@ nav .hamburger {
   background-position: right top;
 }
 
+.two {
+  background-image: url('../images/two.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 .three {
   background-image: url('../images/three.jpg');
   background-repeat: no-repeat;
