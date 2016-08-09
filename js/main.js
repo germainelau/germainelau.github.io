@@ -142,10 +142,6 @@ $(".doll").on('mouseleave',function(){
 
 /* Hover Numbers ======================== */
 
-$('nav').find('one').on('mouseenter',function(){
-	$('.sidebar').addClass('oneClass');
-
-});
 
 
 

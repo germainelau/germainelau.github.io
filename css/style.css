@@ -384,4 +384,28 @@ article div:first-of-type {
   color: #aeaeae;
 }
 
+/* Mobile ======================== */
+
+@media only screen and (max-width: 1000px){
+
+  html {
+    font-size: 11.5px;
+  }
+
+ .one {
+  background-position: 50% 0%;
+}
+
+ .two {
+  background-position: 50% 0%;
+}
+
+ .three {
+  background-position: 50% 0%;
+}
+
+ .four {
+  background-position: 50% 0%;
+}
+
 }
