@@ -23,11 +23,10 @@ $('.title').hover(function(){
 
 });
 
-$('.title').click(function(){
-	$('.sidebar').addClass('active');
 
+$('.sidebar').on('click', function () {
+	$('.sidebar').removeClass('active');
 });
-
 
 $('.close').on('click', function () {
 	$('.sidebar').removeClass('active');
