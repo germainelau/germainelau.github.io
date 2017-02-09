@@ -73,13 +73,20 @@ img {
 }
 
 nav {
-/*  width: 100%;*/
-width: 1300px;
+  width: 1300px;
   height: 100%;
   position: fixed;
   z-index: 100;
   cursor: pointer;
   top: 0;
+}
+
+nav .left {
+  bottom: 5%;
+  position: fixed;
+  right: 2.4%;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 nav .hamburger {
@@ -88,6 +95,7 @@ nav .hamburger {
   right: 2.4%;
   cursor: pointer;
   font-size: 12px;
+  display: none;
 }
 
 .sidebar ul {
@@ -181,47 +189,11 @@ nav .hamburger {
   display: block;
 }
 
-/* View Options ======================== */
-
-/*#views {
-  position: fixed;
-  top: 40px;
-  right: 50px;
-  font-size: 9.5px;
-  color: white;
-  letter-spacing: 2px;
-  display: none;
-}
-
-#views span {
-  cursor: pointer;
-}
-
-#header {
-  width: 100%;
-}
-
-#normalContainer img {
-  width: 100%;
-}
-
-.page {
-  width: 100%;
-}
-
-.gridTile {
-  width: 50%;
-  float: left;
-}
-
-.black {
-  color: black;
-}*/
 
 /* More Information ======================== */
 
 article {
-  margin-left: 11%;
+  margin-left: 138px;
   position: fixed;
   width: 29%;
   bottom: 12%;
@@ -238,7 +210,7 @@ h3 {
 }
 
 article div:first-of-type {
-  padding-right: 32%;
+/*  padding-right: 99px;*/
   padding-bottom: 1px;
 }
 
@@ -247,7 +219,6 @@ article div:first-of-type {
   width: 100%;
   float: left;
   border-top: 1px dotted #454;
-     
 }
 
 .description p {
@@ -272,11 +243,11 @@ article div:first-of-type {
 }
 
 .type h3 {
-  margin-bottom: -8%;
+  margin-bottom: -8px;
 }
 
-.dateEdit h3 {
-/*  margin-bottom: -8%;*/
+.type p {
+
 }
 
 .dateEdit h3 {
@@ -287,7 +258,7 @@ article div:first-of-type {
 
 .gallery_one {
   float: right;
-  width: 30%;
+  width: 29.51%;
   padding-right: 2px;
 /*  padding-left: 30px;*/
 }
@@ -296,37 +267,33 @@ article div:first-of-type {
   padding-bottom: 2px;
 }
 
-.gallery_one img:hover {opacity: 0.7;}
-
-
 .gallery_two {
   float: right;
-  width: 22%;
+  width: 22.49%;
 }
 
+.gallery_three {
+  display: none;
+}
 
 .viewThreeMid {
   float: right;
-  width: 18%;
+  width: 17.2%;
 }
 
 .viewThreeLarge {
   float: right;
-  width: 19%;
+  width: 17.68%;
 }
-
-/*.gallery_three {
-  padding-right: 2px;
-  float: right;
-}*/
 
 .viewThree {
+  display: inline-block;
   float: right;
-  width: 15%;
+  width: 17.02%;
   padding-right: 2px;
 }
 
-.hide {
+.display {
   display: none;
 }
 
@@ -338,6 +305,8 @@ article div:first-of-type {
   padding-bottom: 2px;
 }
 
+.gallery_one img:hover {opacity: 0.7;}
+
 .gallery_two img:hover {opacity: 0.7;}
 
 .gallery_three img:hover {opacity: 0.7;}
@@ -347,14 +316,13 @@ article div:first-of-type {
 .vis {
   float: right;
   width: 52%;
-
 }
 
 .vis img {
   padding-bottom: 2px;
   border-bottom: 1px solid #f5f5f5;;
-  border-left: 1px solid #f5f5f5;
-  border-top: 1px solid #f5f5f5;
+/*  border-left: 1px solid #f5f5f5;*/
+/*  border-top: 1px solid #f5f5f5;*/
 }
 
 /* Snap Back ======================== */
@@ -369,19 +337,14 @@ article div:first-of-type {
   display: none;
 }
 
-/*.HomeScrollUp {
-  margin-left: 8.5%;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 25px;
-  cursor: pointer;
-  font-size: 15px;
-  display: none;
-}*/
-
 /* Collage ======================== */
+
 .grey {
   color: #aeaeae;
+}
+
+#grid, #collage {
+    cursor: pointer;
 }
 
 /* Mobile ======================== */
@@ -406,6 +369,41 @@ article div:first-of-type {
 
  .four {
   background-position: 50% 0%;
+}
+
+#header {
+  background: url('../images/FinalHomeHeader.jpg') no-repeat ;
+  background-size: cover;
+  height: 100vh;
+}
+
+}
+
+@media only screen and (max-width: 450px){
+
+.active {
+  transform: translateX(-12.2%);
+  transition: all .5s ease-in-out;
+}
+
+.one {
+  background-position: right top;
+}
+
+.two {
+  background-position: right top;
+}
+
+.three {
+  background-position: right top;
+}
+
+.four {
+  background-position: right top;
+}
+
+.sidebar ul {
+    width: 28%;
 }
 
 }

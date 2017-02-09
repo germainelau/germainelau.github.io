@@ -86,21 +86,19 @@ $('.HomeScrollUp').hover(function(){
 	return false;
 });
 
-
 /* Collage ======================== */
+
 $(document).ready(function(){
 
 	$("#collage").click(function(){
 		$("#collage").removeClass("grey")
 		$("#collage").addClass("black")
 		$("#grid").addClass("grey");
-		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoRebeccaVertical2.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
-		$('.gallery_two').addClass('viewThreeMid');
-		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt="" class="blueBuilding"><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoRebeccaEdit.jpg" alt="">');
 		$('.gallery_one').addClass('viewThreeLarge');
-		$('.gallery_three').removeClass('hide');
-		$('.gallery_three').html('<img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
-		$('.gallery_three').addClass('viewThree gallery_three img gallery_three img:hover');
+		$('.gallery_one').find('.remove').addClass('display');
+		$('.gallery_two').find('.remove').addClass('display');
+		$('.gallery_two').addClass('viewThreeMid');
+		$('.gallery_three').addClass('viewThree');
 });	
 
 
@@ -108,17 +106,27 @@ $(document).ready(function(){
 		$("#grid").removeClass("grey");
 		$("#grid").addClass("black");
 		$("#collage").addClass("grey");
-		$('.gallery_two').removeClass('viewThreeMid');
-		$('.gallery_two').html('<img src="images/PhotoDoll.jpg" alt="" class="doll"><img src="images/PhotoLegs.jpg" alt=""><img src="images/PhotoKevin.jpg" alt=""><img src="images/PhotoRebeccaVertical2.jpg" alt=""><img src="images/PhotoPortrait.jpg" alt="">');
 		$('.gallery_one').removeClass('viewThreeLarge');
-		$('.gallery_one').html('<img src="images/PhotoTwoLegs.jpg" alt=""><img src="images/PhotoBlueBuilding.jpg" alt="" class="blueBuilding"><img src="images/PhotoRebeccaEdit.jpg" alt=""><img src="images/PhotoBuildings.jpg" alt=""><img src="images/PhotoPink.jpg" alt=""><img src="images/PhotoTree copy.jpg" alt="">');
-		$('.gallery_three').empty()	
+		$('.gallery_two').removeClass('viewThreeMid');
+		$('.gallery_three').removeClass('viewThree');
+				$('.gallery_one').find('.remove').removeClass('display');
+		$('.gallery_two').find('.remove').removeClass('display');
 
 });
 
 });
 
 /* Hover Descriptions ======================== */
+
+$(".photoTwoLegs").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Toilet paper, 2015</p>');
+
+});
+
+$(".photoTwoLegs").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
 
 $(".blueBuilding").on('mouseenter',function(){
 	$('.description').find('p').html('<p>Financial district, 2016</p>');
@@ -130,6 +138,7 @@ $(".blueBuilding").on('mouseleave',function(){
 
 });
 
+
 $(".doll").on('mouseenter',function(){
 	$('.description').find('p').html('<p>Floating doll head, 2015</p>');
 
@@ -140,9 +149,74 @@ $(".doll").on('mouseleave',function(){
 
 });
 
-/* Hover Numbers ======================== */
+$(".denmark").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Kronborg, 2015</p>');
 
+});
 
+$(".denmark").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
 
+});
+
+$(".kevin").on('mouseenter',function(){
+	$('.description').find('p').html('<p><i>Oh, the horror</i>, 2015</p>');
+
+});
+
+$(".kevin").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
+
+$(".rebecca").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Melancholy clown, 2015</p>');
+
+});
+
+$(".rebecca").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
+
+$(".pink").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Van accessible, 2016</p>');
+
+});
+
+$(".pink").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
+
+$(".polariz").on('mouseenter',function(){
+	$('.description').find('p').html('<p>The everyday Keanu Reeves, 2016</p>');
+
+});
+
+$(".polariz").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
+
+$(".tree").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Curling iron, 2016</p>');
+
+});
+
+$(".tree").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
+
+$(".portrait").on('mouseenter',function(){
+	$('.description').find('p').html('<p>Portrait, 2016</p>');
+
+});
+
+$(".portrait").on('mouseleave',function(){
+	$('.description').find('p').html('<p>From legs to skyscrapers&mdash; a collection of photos. </p>');
+
+});
 
 
