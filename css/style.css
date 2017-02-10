@@ -402,20 +402,21 @@ article div:first-of-type {
 .self {
   float: left;
   width: 100%;
+  margin-left: 40px;
 }
 
 .scrollUp {
   position: static;
     float: left;
     width: 100%;
-  margin-left: 19%;
+  margin-left: 105px;
   cursor: pointer;
   font-size: 15px;
   padding-bottom: 10px;
 }
 
 .about {
-  margin-left: 19%;
+  margin-left: 105px;
   position: static;
   width: 60%;
   float: left;
@@ -428,10 +429,6 @@ article div:first-of-type {
 .gallery_one {
   padding-left: 50px;
 }
-
-/*.gallery_two {
-  padding-left: 50px;
-}*/
 
 .gallery_three {
   display: none;
@@ -454,7 +451,7 @@ article div:first-of-type {
 @media only screen and (max-width: 700px){
 
 article {
-  margin-left: 19%;
+  margin-left: 105px;
   position: static;
   width: 60%;
   float: left;
@@ -486,15 +483,14 @@ article {
 
 }
 
-
+.gallery_single img {
+    padding-bottom: 2px;
+    margin-left: 30px;
 }
 
 
-@media only screen and (max-width: 600px){
-
-
-
 }
+
 
 @media only screen and (max-width: 450px){
 
