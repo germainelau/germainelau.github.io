@@ -81,21 +81,12 @@ nav {
   top: 0;
 }
 
-nav .left {
-  bottom: 5%;
-  position: fixed;
-  right: 2.4%;
-  cursor: pointer;
-  font-size: 12px;
-}
-
 nav .hamburger {
   bottom: 5%;
   position: fixed;
   right: 2.4%;
   cursor: pointer;
   font-size: 12px;
-  display: none;
 }
 
 .sidebar ul {
@@ -246,10 +237,9 @@ article div:first-of-type {
   margin-bottom: -8px;
 }
 
-.type p {
-
+/*.type p {
 }
-
+*/
 .dateEdit h3 {
   padding-bottom: -12px;
 }
@@ -311,6 +301,12 @@ article div:first-of-type {
 
 .gallery_three img:hover {opacity: 0.7;}
 
+.gallery_single {
+  display: none;
+  float: left;
+  width: 100%;
+}
+
 /* Gallery (Visual Design) ======================== */
 
 .vis {
@@ -323,6 +319,12 @@ article div:first-of-type {
   border-bottom: 1px solid #f5f5f5;;
 /*  border-left: 1px solid #f5f5f5;*/
 /*  border-top: 1px solid #f5f5f5;*/
+}
+
+.self {
+    float: right;
+    width: 52%;
+/*    transform: translateY(-25%);*/
 }
 
 /* Snap Back ======================== */
@@ -348,6 +350,14 @@ article div:first-of-type {
 }
 
 /* Mobile ======================== */
+
+@media only screen and (max-width: 1200px){
+
+.vis {
+  padding-left: 25px;
+}
+
+}
 
 @media only screen and (max-width: 1000px){
 
@@ -377,6 +387,113 @@ article div:first-of-type {
   height: 100vh;
 }
 
+.vis {
+  padding-left: 20px;
+}
+
+}
+
+@media only screen and (max-width: 800px){
+
+.vis {
+  padding-left: 50px;
+}
+
+.self {
+  float: left;
+  width: 100%;
+}
+
+.scrollUp {
+  position: static;
+    float: left;
+    width: 100%;
+  margin-left: 19%;
+  cursor: pointer;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.about {
+  margin-left: 19%;
+  position: static;
+  width: 60%;
+  float: left;
+  border-top: 1px dotted #454;
+  border-bottom: 1px dotted #454;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.gallery_one {
+  padding-left: 50px;
+}
+
+/*.gallery_two {
+  padding-left: 50px;
+}*/
+
+.gallery_three {
+  display: none;
+}
+
+#collage {
+  display: none;
+}
+
+#grid {
+  cursor: none;
+}
+
+#slash {
+  display: none;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+
+article {
+  margin-left: 19%;
+  position: static;
+  width: 60%;
+  float: left;
+  border-top: 1px dotted #454;
+  border-bottom: 1px dotted #454;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.vis {
+  float: left;
+  width: 100%;
+}
+
+.gallery_one {
+  display: none;
+}
+
+.gallery_two {
+  display: none;
+}
+
+.gallery_three {
+  display: none;
+}
+
+.gallery_single {
+  display: inline-block;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+
 }
 
 @media only screen and (max-width: 450px){
@@ -403,7 +520,10 @@ article div:first-of-type {
 }
 
 .sidebar ul {
-    width: 28%;
+    width: 27.28%;
+    background-color: none;
 }
+
+
 
 }
